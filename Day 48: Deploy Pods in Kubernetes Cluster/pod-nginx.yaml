@@ -1,0 +1,10 @@
+apiVersion: v1         # The version of the Kubernetes API we are using
+kind: Pod              # We are creating a Pod resource
+metadata:
+  name: pod-nginx      # Name of the pod
+  labels:
+    app: nginx_app     # Adds a label "app=nginx_app" to the pod
+spec:
+  containers:
+    - name: nginx-container   # The container name inside the pod
+      image: nginx:latest     # The image the container will use
